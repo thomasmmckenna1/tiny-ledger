@@ -5,8 +5,8 @@ import java.util.UUID;
 
 public class InsufficientFundsException extends RuntimeException{
 
-    public InsufficientFundsException(UUID accountId, BigDecimal balance, BigDecimal requested) {
-        super("Account " + accountId + " balance too low. Balance: "
+    public InsufficientFundsException(UUID transactionId, BigDecimal balance, BigDecimal requested) {
+        super("Transaction " + transactionId + " failed. Account balance too low. Balance: "
                 + balance.toPlainString() + ". Withdrawal requested: "
                 + requested.toPlainString());
     }
