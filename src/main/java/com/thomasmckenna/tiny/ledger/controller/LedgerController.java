@@ -5,7 +5,6 @@ import com.thomasmckenna.tiny.ledger.domain.Account;
 import com.thomasmckenna.tiny.ledger.domain.Transaction;
 import com.thomasmckenna.tiny.ledger.service.LedgerService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +18,6 @@ import java.util.UUID;
 @RequestMapping("/accounts")
 public class LedgerController {
 
-    @Autowired
     private final LedgerService ledgerService;
 
     @PostMapping

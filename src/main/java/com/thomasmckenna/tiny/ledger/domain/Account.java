@@ -56,7 +56,7 @@ public class Account {
             throw new InvalidAmountException("Transaction amount must be greater than zero");
         }
         if (amount.scale() > SCALE) {
-            throw new InvalidAmountException("Transaction amount must have no more than " + SCALE + "decimal places");
+            throw new InvalidAmountException("Transaction amount must have no more than " + SCALE + " decimal places");
         }
     }
 }

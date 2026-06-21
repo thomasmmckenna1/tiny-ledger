@@ -28,7 +28,7 @@ public class LedgerService {
         if (account == null) {
             throw new AccountNotFoundException(id);
         }
-        return accounts.get(id);
+        return account;
     }
 
     public Transaction deposit(UUID accountId, BigDecimal amount) {
